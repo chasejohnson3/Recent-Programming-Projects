@@ -1,0 +1,4 @@
+C:\Users\User\Documents\Fun Projects\Visual Studio 2017\Projects\FirstCrossPlatformApp\FirstCrossPlatformApp\FirstCrossPlatformApp.Android\obj\Debug\FirstCrossPlatformApp.Android.csprojResolveAssemblyReference.cache
+C:\Users\User\OneDrive - University of Iowa\Programming Projects\Mobile Apps\FirstCrossPlatformApp\FirstCrossPlatformApp\FirstCrossPlatformApp.Android\obj\Debug\FirstCrossPlatformApp.Android.csprojResolveAssemblyReference.cache
+C:\Users\User\Documents\Programming Projects\Mobile Apps\FirstCrossPlatformApp\FirstCrossPlatformApp\FirstCrossPlatformApp.Android\obj\Debug\FirstCrossPlatformApp.Android.csprojResolveAssemblyReference.cache
+C:\Users\User\Documents\Programming Projects\Visual Studio 2017\Mobile Apps\FirstCrossPlatformApp\FirstCrossPlatformApp\FirstCrossPlatformApp.Android\obj\Debug\FirstCrossPlatformApp.Android.csprojResolveAssemblyReference.cache

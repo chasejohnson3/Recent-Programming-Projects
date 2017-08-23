@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1497816719 source:c:\users\user\onedrive - university of iowa\programming projects\soduku\main.cpp
+	<iostream>
+	<fstream>
+
