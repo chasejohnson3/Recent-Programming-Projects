@@ -52,6 +52,7 @@ page_soup = soup(page_html, "html.parser")
 # print(page_soup.p)
 containers = page_soup.findAll("div", {"class":"item-container"})
 # print(len(containers))
+f.write("Brand, Product, Shipping")
 for container in containers:
     brand = container.div.div.a.img["title"]
     product = container.a.img["title"]
