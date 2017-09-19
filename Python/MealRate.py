@@ -24,7 +24,7 @@
 #                # you can fetch rest of the indexs for corresponding headers
 #                }
 #
-# if __name__ == '__main__':
+# if __name__ == '__main__':f
 #     dom = get_html_page_dom('http://espn.go.com/nba/statistics/player/_/stat/scoring-per-48-minutes/')
 #     for data in extract_rows(dom):
 #         print(data)
@@ -40,6 +40,11 @@ uClient = uReq(my_url)
 page_html = uClient.read()
 uClient.close()
 
+fileName = "products.csv"
+f = open(fileName, "w")
+headers = "brand, product_name, shipping\n"
+
+
 # html parser
 page_soup = soup(page_html, "html.parser")
 # print(page_soup.h1)
@@ -47,8 +52,13 @@ page_soup = soup(page_html, "html.parser")
 # print(page_soup.p)
 containers = page_soup.findAll("div", {"class":"item-container"})
 # print(len(containers))
-
 for container in containers:
+    brand = container.div.div.a.img["title"]
+    product = container.a.img["title"]
     print("Brand: " + container.div.div.a.img["title"])
-    print("Product: " + container.a.img["title"] + "\n")
+    print("Product: " + container.a.img["title"])
+    shipping_container = container.findAll("li", {"class": "price-ship"})
+    print("Shipping: " + shipping_container[0].text.strip() + "\n")
 
+    f.write(brand + "," + product.replace(",", "|") + "," + shipping_container[0].text.strip() + "\n")
+f.close()
